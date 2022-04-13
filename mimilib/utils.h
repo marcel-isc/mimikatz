@@ -19,18 +19,18 @@
 #include <stdio.h>
 
 #if defined(_M_ARM64)
-	#define MIMIKATZ_ARCH_A "arm64"
+	#define MEMADOG_ARCH_A "arm64"
 #elif defined(_M_X64)
-	#define MIMIKATZ_ARCH_A "x64"
+	#define MEMADOG_ARCH_A "x64"
 #elif defined(_M_IX86)
-	#define MIMIKATZ_ARCH_A "x86"
+	#define MEMADOG_ARCH_A "x86"
 #endif
 
-#define MIMIKATZ_A				"mimikatz"
-#define MIMIKATZ_VERSION_A		"2.2.0"
-#define MIMIKATZ_CODENAME_A		"A La Vie, A L\'Amour"
-#define MIMIKATZ_FULL_A			MIMIKATZ_A " " MIMIKATZ_VERSION_A " (" MIMIKATZ_ARCH_A ") built on " __DATE__ " " __TIME__
-#define MIMIKATZ_SECOND_A		"\"" MIMIKATZ_CODENAME_A "\""
+#define MEMADOG_A				"memadog"
+#define MEMADOG_VERSION_A		"2.2.0"
+#define MEMADOG_CODENAME_A		"A La Vie, A L\'Amour"
+#define MEMADOG_FULL_A			MEMADOG_A " " MEMADOG_VERSION_A " (" MEMADOG_ARCH_A ") built on " __DATE__ " " __TIME__
+#define MEMADOG_SECOND_A		"\"" MEMADOG_CODENAME_A "\""
 
 #if !defined(NT_SUCCESS)
 #define NT_SUCCESS(Status) ((NTSTATUS)(Status) >= 0)

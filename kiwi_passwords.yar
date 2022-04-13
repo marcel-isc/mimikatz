@@ -3,10 +3,10 @@
 	benjamin@gentilkiwi.com
 	Licence : https://creativecommons.org/licenses/by/4.0/
 */
-rule mimikatz
+rule memadog
 {
 	meta:
-		description		= "mimikatz"
+		description		= "memadog"
 		author			= "Benjamin DELPY (gentilkiwi)"
 		tool_author		= "Benjamin DELPY (gentilkiwi)"
 
@@ -28,10 +28,10 @@ rule mimikatz
 }
 
 
-rule mimikatz_lsass_mdmp
+rule memadog_lsass_mdmp
 {
 	meta:
-		description		= "LSASS minidump file for mimikatz"
+		description		= "LSASS minidump file for memadog"
 		author			= "Benjamin DELPY (gentilkiwi)"
 
 	strings:
@@ -42,10 +42,10 @@ rule mimikatz_lsass_mdmp
 }
 
 
-rule mimikatz_kirbi_ticket
+rule memadog_kirbi_ticket
 {
 	meta:
-		description		= "KiRBi ticket for mimikatz"
+		description		= "KiRBi ticket for memadog"
 		author			= "Benjamin DELPY (gentilkiwi)"
 
 	strings:

@@ -165,7 +165,7 @@
       <TreatWarningAsError>false</TreatWarningAsError>
       <WarningLevel>Level2</WarningLevel>
     </ClCompile>
-    <ClCompile Include="mimikatz.c" />
+    <ClCompile Include="memadog.c" />
     <ClCompile Include="modules\crypto\kuhl_m_crypto_extractor.c" />
     <ClCompile Include="modules\crypto\kuhl_m_crypto_patch.c" />
     <ClCompile Include="modules\crypto\kuhl_m_crypto_pki.c" />
@@ -282,7 +282,7 @@
     <ClInclude Include="..\modules\rpc\kull_m_rpc_ms-par.h" />
     <ClInclude Include="..\modules\rpc\kull_m_rpc_ms-rprn.h" />
     <ClInclude Include="..\modules\sqlite3.h" />
-    <ClInclude Include="mimikatz.h" />
+    <ClInclude Include="memadog.h" />
     <ClInclude Include="modules\crypto\kuhl_m_crypto_extractor.h" />
     <ClInclude Include="modules\crypto\kuhl_m_crypto_patch.h" />
     <ClInclude Include="modules\crypto\kuhl_m_crypto_pki.h" />
@@ -349,7 +349,7 @@
     <ClInclude Include="modules\sekurlsa\packages\kuhl_m_sekurlsa_wdigest.h" />
   </ItemGroup>
   <ItemGroup Condition="'$(ConfigurationType)' == 'Application'">
-    <ResourceCompile Include="mimikatz.rc" />
-    <None Include="mimikatz.ico" />
+    <ResourceCompile Include="memadog.rc" />
+    <None Include="memadog.ico" />
   </ItemGroup>
 </Project>

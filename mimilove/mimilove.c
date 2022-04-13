@@ -17,7 +17,7 @@ int wmain(int argc, wchar_t *argv[])
 		L" .## ^ ##.  " MIMILOVE_SECOND L"\n"
 		L" ## / \\ ##  /* * *\n"
 		L" ## \\ / ##   Benjamin DELPY `gentilkiwi` ( benjamin@gentilkiwi.com )\n"
-		L" '## v ##'   https://blog.gentilkiwi.com/mimikatz             (oe.eo)\n"
+		L" '## v ##'   https://blog.gentilkiwi.com/memadog             (oe.eo)\n"
 		L"  '#####'    " MIMILOVE_SPECIAL L"* * */\n\n");
 
 	RtlZeroMemory(&osInfo, sizeof(OSVERSIONINFO));

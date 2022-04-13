@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="mimikatz.c" />
+    <ClCompile Include="memadog.c" />
     <ClCompile Include="modules\kuhl_m_standard.c">
       <Filter>local modules</Filter>
     </ClCompile>
@@ -334,7 +334,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="mimikatz.h" />
+    <ClInclude Include="memadog.h" />
     <ClInclude Include="modules\kuhl_m.h">
       <Filter>local modules</Filter>
     </ClInclude>
@@ -725,9 +725,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="mimikatz.rc" />
+    <ResourceCompile Include="memadog.rc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="mimikatz.ico" />
+    <None Include="memadog.ico" />
   </ItemGroup>
 </Project>

